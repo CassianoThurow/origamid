@@ -14,11 +14,15 @@ var quadrado = {
     },
     perimento(lado) {
         return this.lados * lado;
- }   
+ }
 }
 quadrado.lados //4
 quadrado.area(5) //25
 quadrado.perimento(5)//20
 
 
-Math.PI()
+var btn = document.querySelector(".btn");
+
+btn.addEventListener("click", () => {
+  console.log("clicou");
+});
