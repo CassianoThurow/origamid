@@ -24,7 +24,7 @@ titulo.classList.add("grid-section");
 console.log(gridSelectionHTML);
 console.log(gridSectionNode); //Atualiza em tempo real
 
-gridSectionNode.forEach(function (item, index) {
+gridSectionNode.forEach((item, index) => {
   console.log(item);
 });
 
