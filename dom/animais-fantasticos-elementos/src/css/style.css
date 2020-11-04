@@ -212,3 +212,7 @@ body {
     margin-bottom: 0;
   }
 }
+
+.ativo {
+  border-bottom: 2px solid rgb(235, 108, 5);
+}
