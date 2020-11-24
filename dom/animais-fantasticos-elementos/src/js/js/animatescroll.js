@@ -7,9 +7,6 @@ function animeScroll(){
         const visibleSection = (sectionTop -  windowHalf) < 0
         if (visibleSection){
             section.classList.add('ativo')
-        }else{
-            section.classList.remove('ativo')
-
         }
     })
 }
