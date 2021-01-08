@@ -11,7 +11,7 @@ carros.forEach((item, index, array) => {
 
 const li = document.querySelectorAll('li');
 
-li.forEach( (i) => {i.classList.add ('active')})
+li.forEach( (i ) => {i.classList.add ('active')})
 
 
 
@@ -115,3 +115,69 @@ const menorValor = numeros2.reduce((anterior, atual) => {
 })
 
 console.log(menorValor)
+
+
+
+const listaAulas = aulas.reduce((acc, atual, index) => {
+  acc[index] = atual.nome;
+  return acc;
+},{})
+
+
+
+
+const frutas = ['Banana', 'Pêra', 'Uva'];
+
+const frutasRight = frutas.reduceRight((acc, fruta) => acc + ' ' + fruta);
+const frutasLeft = frutas.reduce((acc, fruta) => acc + ' ' + fruta);
+
+frutasRight; // Uva Pêra Banana
+frutasLeft; // Banana Pêra Uva
+
+
+const frutas2 = ['Banana', 'Pêra', 'Uva'];
+const temUva = frutas2.some((fruta) => {
+  return fruta === 'Uva';
+}); // true
+
+function maiorQue100(numero) {
+  return numero > 100;
+}
+
+const numeros3 = [0, 43, 22, 88, 101, 2];
+const temMaior = numeros3.some(maiorQue100); // true
+
+
+const frutas = ['Banana', 'Pêra', 'Uva', ''];
+// False pois pelo menos uma fruta
+// está vazia '', o que é um valor falsy
+const arraysCheias = frutas.every((fruta) => {
+  return fruta; // false
+});
+
+const numeros = [6, 43, 22, 88, 101, 29];
+const maiorQue3 = numeros.every(x => x > 3); // true
+
+
+
+const frutas = ['Banana', 'Pêra', 'Uva', 'Maçã'];
+const buscaUva = frutas.findIndex((fruta) => {
+  return fruta === 'Uva'; 
+}); // 2
+
+const numeros = [6, 43, 22, 88, 101, 29];
+const buscaMaior45 = numeros.find(x => x > 45); // 88
+
+
+const frutas = ['Banana', undefined, null, '', 'Uva', 0, 'Maçã'];
+const arrayLimpa = frutas.filter((fruta) => {
+  return fruta; 
+}); // ['Banana', 'Uva', 'Maçã']
+
+const numeros = [6, 43, 22, 88, 101, 29];
+const buscaMaior45 = numeros.filter(x => x > 45); // [88, 101]
+
+
+const aulasMaiores = aulas.filter((aula) => { 
+  return aula.min > 15;
+});
