@@ -68,4 +68,4 @@ const valorTotal = compras.reduce((acc, item)=>{
     const precoLimpo = +item.preco.replace('R$', '').replace(',', '.')
     return acc + precoLimpo;
 },0)
-console.log(valorTotal)
+console.log(valorTotal);
