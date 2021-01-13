@@ -1,4 +1,5 @@
-function initTab(){
+export default function initTab()
+{
 const tabMenu = document.querySelectorAll('[data-tab="menu"] li')
 const tabContent = document.querySelectorAll('[data-tab="content"] section')
 
@@ -22,4 +23,3 @@ tabMenu.forEach((item, index)=>{
 })
 }
 }
-initTab()

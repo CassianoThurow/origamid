@@ -1,6 +1,6 @@
 const linksInternos = document.querySelectorAll('[data-menu="suave"] a[href^="#"]')
 
-function smoothScroll(e){
+export default function smoothScroll(e){
 e.preventDefault();
 const href = e.currentTarget.getAttribute('href')
 const section = document.querySelector(href)
