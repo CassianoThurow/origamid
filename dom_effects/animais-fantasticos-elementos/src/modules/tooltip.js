@@ -8,7 +8,7 @@ tooltips.forEach((i)=>{
 function onMouseOver(e){
     const tooltipBox = createTooltipBox(this)
     tooltipBox.style.top = e.pageY + 'px';
-    tooltipBox.style.right = e.pageX + 'px';
+    tooltipBox.style.left = e.pageX + 'px';
 
     onMouseMove.tooltipBox = tooltipBox;
     onMouseLeave.tooltipBox = tooltipBox;
@@ -22,7 +22,7 @@ function onMouseOver(e){
 const onMouseMove = {
     handleEvent(e){
     this.tooltipBox.style.top = e.pageY + 20 + 'px';
-    this.tooltipBox.style.right = e.pageX + 20 +'px';   
+    this.tooltipBox.style.left = e.pageX + 20 +'px';   
     }
 
 }
