@@ -9,9 +9,9 @@ import dropdownMenu from '../modules/dropdown-menu.js'
 
 
 initTab();
+dropdownMenu();
 animeScroll();
 activeAccordion();
 smoothScroll();
 showModal();
 tooltip();
-dropdownMenu();
