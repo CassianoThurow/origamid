@@ -17,12 +17,12 @@ function menuMobile(){
     });
 
 
+
 }
 
+menuButton.addEventListener('click', openMenu)
 
-events.forEach((evento)=>{
-    menuButton.addEventListener(evento, openMenu)
-})
+
 
 }
 
