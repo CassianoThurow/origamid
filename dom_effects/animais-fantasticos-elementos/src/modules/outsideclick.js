@@ -6,10 +6,9 @@ function outsideClick(element, events, callback){
 
     if(!element.hasAttribute(outside)){
      events.forEach((userEvent)=>{
-        setTimeout(()=>{
-            html.addEventListener(userEvent, handleOutsideClick)
-        }) 
-     })   
+        setTimeout(()=>
+            html.addEventListener(userEvent, handleOutsideClick)) 
+     },1000)   
     element.setAttribute(outside, '')
     }
 

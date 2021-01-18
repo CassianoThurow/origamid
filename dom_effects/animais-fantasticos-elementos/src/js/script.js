@@ -8,7 +8,7 @@ import dropdownMenu from '../modules/dropdown-menu.js'
 import menuMobile from '../modules/menumobile.js'
 
 
-
+menuMobile();
 initTab();
 dropdownMenu();
 animeScroll();
@@ -16,4 +16,3 @@ activeAccordion();
 smoothScroll();
 showModal();
 tooltip();
-menuMobile();

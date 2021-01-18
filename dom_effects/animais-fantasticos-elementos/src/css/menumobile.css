@@ -4,17 +4,26 @@
 
 @media (max-width: 700px) {
   [data-menu="mobile"] {
-    display: block;
-    padding: 20px;
+    display: flex;
+    padding: 50px;
     background-color: transparent;
     border: none;
     outline: none;
-    font-size: 35px;
     cursor: pointer;
     position: relative;
     z-index: 300;
     transition: transform 0.3s;
+    float: right;
   }
+  [data-menu="mobile"]::before {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 12px;
+    background: #000;
+    box-shadow: 0 4px #000, 0 -4px #000;
+  }
+
   [data-menu="mobile"].active {
     transform: rotate(90deg);
   }
@@ -26,6 +35,9 @@
     width: 160px;
     z-index: 200;
     box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+    right: 0;
+    top: 70px;
+    text-align: right;
   }
   #menu.active {
     display: block;
@@ -35,5 +47,8 @@
   .dropdown-menu {
     position: static;
     border: none;
+  }
+  .dropdown-menu::before {
+    margin-left: 96px;
   }
 }
