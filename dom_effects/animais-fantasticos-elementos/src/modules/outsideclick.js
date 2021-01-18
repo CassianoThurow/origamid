@@ -8,7 +8,7 @@ function outsideClick(element, events, callback){
      events.forEach((userEvent)=>{
         setTimeout(()=>
             html.addEventListener(userEvent, handleOutsideClick)) 
-     },1000)   
+     })   
     element.setAttribute(outside, '')
     }
 

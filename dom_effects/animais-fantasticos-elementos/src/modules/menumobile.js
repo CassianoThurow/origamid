@@ -8,7 +8,7 @@ function menuMobile(){
 
 
     function openMenu(e){
-    menuList.classList.add('active')
+    menuList.classList.toggle('active')
     menuButton.classList.add('active')
     
     outsideClick(menuList, events, ()=>{
