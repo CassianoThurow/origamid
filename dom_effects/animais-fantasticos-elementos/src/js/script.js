@@ -7,8 +7,9 @@ import tooltip from '../modules/tooltip.js'
 import dropdownMenu from '../modules/dropdown-menu.js'
 import menuMobile from '../modules/menumobile.js'
 import animateNumbers from '../modules/numbers.js'
+import businessHours from '../modules/businesshours.js'
 
-
+businessHours();
 animateNumbers();
 menuMobile();
 initTab();

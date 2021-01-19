@@ -302,3 +302,18 @@ dt {
   transform: translate3d(0, 0, 0);
   transition: 0.3s;
 }
+
+[data-week]::after {
+  display: inline-block;
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #e54;
+  margin-left: 4px;
+  border: 1px solid black;
+}
+
+[data-week].open::after {
+  background: rgb(10, 223, 10);
+}
