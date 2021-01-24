@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "nome": "Cassiano",
+    "email": "cassiano.thurow@gmail.com",
+    "faculdade": true,
+    "endereco": {
+      "cidade": "São Lourenço do Sul",
+      "pais": "brasil"
+    }
+  },
+
+  {
+    "id": 2,
+    "nome": "teste",
+    "email": "teste.thurow@gmail.com",
+    "faculdade": false,
+    "endereco": {
+      "cidade": "Pelotas",
+      "pais": "brasil"
+    }
+  }
+]
