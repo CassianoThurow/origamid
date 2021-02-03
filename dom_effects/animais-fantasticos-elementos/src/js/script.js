@@ -8,7 +8,10 @@ import dropdownMenu from '../modules/dropdown-menu.js'
 import menuMobile from '../modules/menumobile.js'
 import businessHours from '../modules/businesshours.js'
 import initFetchAnimais from '../modules/fetch-animais.js'
+import initBitcoins from '../modules/bitcoin.js'
 
+
+initBitcoins();
 initFetchAnimais();
 businessHours();
 menuMobile();

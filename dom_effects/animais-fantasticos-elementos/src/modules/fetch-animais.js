@@ -18,7 +18,6 @@ function initFetchAnimais(){
     
     
     function createAnimal(animal){
-        console.log(animal)
         const div = document.createElement('div')
         div.classList.add('numero-animal')
     
